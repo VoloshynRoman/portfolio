@@ -1,0 +1,329 @@
+@import "bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+//colors
+$c-white: #fff;
+$c-black: #1a1a1a;
+$c-blue: #008ed6;
+$c-p: #7f8081;
+$c-a-br: #4b494d;
+$c-img-br: #e1e1e1;
+$c-p-gray: #999999;
+$c-section_border-bottom: #ededed;
+$c-bg-article: #f2f2f2;
+
+//fonts
+$font-family: 'Source Sans Pro', sans-serif;
+
+h1, h2, h3, h4, h5, h6, p, a, span{
+  font-family: $font-family;
+}
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+//extend
+p{
+  color: $c-p-gray;
+  font-size: 1.125rem;
+}
+h6{
+  color: $c-blue;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.style-nav-a-hover{
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $c-blue;
+  width: 0;
+  position: absolute;
+  //transform: rotate(-180deg);
+}
+h2{
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 36px;
+  position: relative;
+  &:after, &:before{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: $c-blue;
+    width: 20px;
+    position: absolute;
+    bottom: -35px;
+  }
+  &:before{
+    margin-left: 22px;
+  }
+  @include max-screen(991px){
+    &:after, &:before{
+      left: 50%;
+      margin-left: -20px;
+    }
+    &:before{
+      margin-left: 2px;
+    }
+    text-align: center;
+  }
+}
+.h2_after-center{
+  &:after, &:before{
+    left: 50%;
+    margin-left: -20px;
+  }
+  &:before{
+    margin-left: 2px;
+  }
+}
+
+
+header{
+  background-image: url("../img/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  //height: 100vh;
+  .navbar{
+    padding: 40px 0 50px!important;
+    line-height: 1.5rem;
+  }
+  .navbar-light .navbar-toggler-icon{
+    background-image: url("../img/hambmenu.png");
+  }
+  .navbar-light .navbar-toggler{
+    border-color: rgba(0,0,0,0);
+    outline: none;
+    padding: 0;
+  }
+  nav{
+    .navbar-brand{
+      color: $c-white!important;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+    li{
+      font-size: 1rem;
+      padding: 0 0 0 23px;
+      @include max-screen(991px){
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+      }
+      a{
+        color: $c-white !important;
+        position: relative;
+        padding: 0 !important;
+        transition: .3s;
+
+        &:after {
+          @extend .style-nav-a-hover;
+          margin-top: 12px;
+          transition: .3s;
+          @include max-screen(991px){
+            margin-top: 0;
+          }
+        }
+
+        &:before {
+          @extend .style-nav-a-hover;
+          right: 0;
+          bottom: -14px;
+          transition: .3s;
+          @include max-screen(991px){
+            bottom: -2px;
+          }
+        }
+
+        &:hover{
+          &:after, &:before{
+            width: 46%;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+  h6{
+    line-height: 0.875rem;
+    margin: 102px 0 33px;
+    @include max-screen(991px){
+      margin: 30px 0 33px;
+    }
+  }
+  h1{
+    color: $c-white;
+    font-size: 3rem;
+    margin-bottom: 36px;
+  }
+  p{
+    color: $c-p;
+    font-size: 1.125rem;
+    margin-bottom: 60px;
+  }
+  .btn-outline-primary{
+    text-transform: uppercase;
+    color: $c-white;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    padding: 20px 28px;
+    margin: 0 20px 110px 0;
+    border-color: $c-a-br;
+    @include max-screen(384px){
+      margin: 0 0 110px;
+    }
+    @include max-screen(344px){
+      margin-bottom: 25px;
+    }
+  }
+  .flex-mobilka{
+    display: flex;
+    align-items: flex-end;
+    bottom: -50px;
+    img{
+      width: 100%;
+    }
+    @include max-screen(991px){
+      display: none;
+    }
+  }
+}
+section{
+  padding: 65px 0 80px;
+  @include max-screen(991px){
+    padding: 50px 0 20px;
+  }
+  &:first-of-type{
+    border-bottom: 1px solid $c-section_border-bottom;
+  }
+  h2{
+    margin-bottom: 110px;
+  }
+
+  .block{
+    height: 88px;
+    width: 88px;
+    border: 1px solid $c-img-br;
+    margin: 0 auto 35px;
+    border-radius: 50%;
+    img{
+      margin-top: 33%;
+      height: 32px;
+    }
+  }
+  .Headline{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $c-black;
+    margin-bottom: 23px;
+  }
+  p{
+    font-size: 1.125rem;
+    @include max-screen(991px){
+      margin-bottom: 50px;
+    }
+  }
+}
+.section_Beautiful{
+  padding: 66px 15px 19px;
+  h6{
+    margin-top: 54px;
+    @include max-screen(1199px){
+      margin-top: 0;
+    }
+  }
+  h2{
+    margin-bottom: 68px;
+  }
+  p{
+    margin-bottom: 40px;
+  }
+  .mobilka{
+    width: 100%;
+    @include max-screen(991px){
+      margin-top: 25px;
+    }
+  }
+  ul{
+    padding:0;
+    @include max-screen(991px){
+      padding-left: 20%;
+    }
+    @include max-screen(375px){
+      padding-left: 8%;
+    }
+    li{
+      list-style: none;
+      margin-bottom: 19px;
+      line-height: 16px;
+      img{
+        margin-right: 10px;
+      }
+    }
+  }
+}
+article{
+  background-color: $c-bg-article;
+  .article_Super{
+    //padding: 62px 0 50px;
+    h6{
+      margin-top: 70px;
+    }
+    h2{
+      margin-bottom: 66px;
+    }
+    img{
+      width: 100%;
+      @include max-screen(1199px){
+        margin-top: 20%;
+      }
+      @include max-screen(991px){
+        margin-top: 0;
+      }
+    }
+  }
+}
+.carousel{
+  background-image: url("../img/lucid_onepage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2{
+    color: $c-white;
+  }
+  p{
+    color: $c-white;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  .flex-row{
+    display: flex;
+    align-items: center;
+    .img-block{
+      width: 59px;
+      height: 59px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 25px;
+    }
+    .name{
+      font-size: 1rem;
+      font-style: normal;
+    }
+    .profession{
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: bold;
+    }
+    p{
+      margin-bottom: 5px;
+    }
+  }
+}
