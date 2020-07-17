@@ -447,5 +447,8 @@ footer {
     display: none; }
     footer .back-to-top:hover {
       background: #008ed6; }
+    @media screen and (max-width: 970px) {
+      footer .back-to-top {
+        display: none !important; } }
 
 /*# sourceMappingURL=main01.css.map */

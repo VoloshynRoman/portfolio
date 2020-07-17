@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c416ac31-4ce2-44df-a59c-37b31f67695f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="c416ac31-4ce2-44df-a59c-37b31f67695f" name="Default Changelist" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/.sass-cache/bb06e6bdff5b6282c54d4fdc68b39bb2bcebf9d4/main01.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/css/.sass-cache/bb06e6bdff5b6282c54d4fdc68b39bb2bcebf9d4/main01.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main01.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main01.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main01.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main01.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main01.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main01.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index 01.html" beforeDir="false" afterPath="$PROJECT_DIR$/index 01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -86,6 +83,8 @@
       <workItem from="1593159712851" duration="2610000" />
       <workItem from="1593169628621" duration="1244000" />
       <workItem from="1593507303436" duration="2354000" />
+      <workItem from="1593511196694" duration="825000" />
+      <workItem from="1594965050905" duration="2363000" />
     </task>
     <servers />
   </component>
@@ -113,14 +112,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593510360126" />
-    <state x="647" y="315" key="Github.ShareDialog" timestamp="1593160505201">
+    <state x="647" y="315" key="Github.ShareDialog" timestamp="1593511369939">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1593160505201" />
-    <state x="277" y="62" key="SettingsEditor" timestamp="1593159828728">
+    <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1593511369939" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1594965113566">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593159828728" />
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1594965113566" />
+    <state x="578" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594967347213">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="578" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1594967347213" />
     <state x="479" y="0" width="578" height="834" key="find.popup" timestamp="1591697197463">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

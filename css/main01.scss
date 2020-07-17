@@ -593,5 +593,8 @@ footer{
     &:hover{
       background: $c-blue;
     }
+    @include max-screen(970px){
+      display: none!important;
+    }
   }
 }
